@@ -1,6 +1,6 @@
 .gradle
 build/
-resources/servica.json
+resources/service-file.json
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
