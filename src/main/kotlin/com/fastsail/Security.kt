@@ -16,7 +16,7 @@ fun Application.configureSecurity() {
             adminFile = File("path/to/admin/file.json")
             realm = "My Server"
             validate { token ->
-                MyAuthenticatedUser(id = token.uid)
+//                MyAuthenticatedUser(id = token.uid)
             }
         }
     }
