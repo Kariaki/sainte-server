@@ -1,6 +1,4 @@
 
-val gce_logback_version: String by project
-
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.ktor)
@@ -28,12 +26,7 @@ dependencies {
     implementation(libs.ktor.server.auth.jwt)
     implementation(libs.ktor.server.netty)
     implementation(libs.logback.classic)
-    implementation("com.google.firebase:firebase-admin:9.0.0")
     implementation(libs.ktor.server.config.yaml)
     testImplementation(libs.ktor.server.test.host)
     testImplementation(libs.kotlin.test.junit)
-    implementation("com.google.cloud:google-cloud-logging-logback:$gce_logback_version")
-    implementation("io.grpc:grpc-netty:1.53.0")
-
-    implementation("io.grpc:grpc-okhttp:1.53.0")
 }
