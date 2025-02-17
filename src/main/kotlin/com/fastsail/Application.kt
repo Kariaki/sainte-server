@@ -43,8 +43,6 @@ fun Application.module() {
 
     val userCollection = FirestoreClient.getFirestore().collection("user")
 
-
-
     CoroutineScope(Dispatchers.IO).launch {
         FirestoreClient.getFirestore().collection("messages")
             .orderBy("timestamp",Query.Direction.DESCENDING)
